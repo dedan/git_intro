@@ -53,7 +53,7 @@
 \else
 \usepackage{graphicx}
 \fi
-\title{Homework for git Introduction}
+\title{Homework for git introduction}
 \author{Stephan Gabler}
 
 \date{\today}
@@ -68,19 +68,22 @@
 
 \maketitle
 
+\begin{abstract}
+    This homework is just to foster what I told you because I think these things sound all quite abstract and will be forgotten immediately if not used once. It looks like a lot, but only because I tried to explain every step. It should not take you more then 10 minutes.
+\end{abstract}
 
 \section{Getting the Software and Account}
 
 \subsection{Install MySysGit} % (fold)
 \label{sg:sub:install_mysysgit}
-This gives you the git commandline tools and also a very basic (but not too bad) GUI. On the page \url{http://code.google.com/p/msysgit/} you can get information on the software and find different installers and installation instructions. But it should be enough to just directly download the installer from \href{http://code.google.com/p/msysgit/downloads/detail?name=Git-1.7.3.1-preview20101002.exe}{here} and install it.
+This gives you the git commandline tools and also a very basic (but not too bad) GUI (Graphical User Interface). On the page \url{http://code.google.com/p/msysgit/} you can get information on the software and find different installers and installation instructions. But it should be enough to just directly download the installer from \url{http://code.google.com/p/msysgit/downloads/detail?name=Git-1.7.3.1-preview20101002.exe} and install it.
 
 % subsection install_mysysgit (end)
 
 
 \subsection{Install the TortoiseGIT GUI (optional but recommended)} % (fold)
 \label{sg:sub:install_the_tortoisegit_gui_optional_}
-Much more convenient GUI and many tools which are similar to what I showed you during the talk. Get the software from \url{http://code.google.com/p/tortoisegit/} and install it on your computer. Maybe you need to restart afterwards. TortoiseGIT will integrate into you File Browser (Explorer) and you access it by the context menu (rightclick) as I showed you in the in the presentation.
+A much more convenient GUI and many tools which are similar to what I showed you during the talk. Get the software from \url{http://code.google.com/p/tortoisegit/} and install it on your computer. Maybe you need to restart afterwards. TortoiseGIT will integrate into you File Browser (Explorer) and you access it by the context menu (rightclick) as I showed you in the in the presentation.
 
 \textbf{This software works only when MySysGit already installed!}
 % subsection install_the_tortoisegit_gui_optional_ (end)
@@ -99,14 +102,38 @@ Get an account on \url{https://github.com/signup/free}. This is were the reposit
 \subsection{Get a working copy of the repository} % (fold)
 \label{sg:sub:get_a_working_copy_of_the_repository}
 
-After I made you a collaborator on the homework repository you can \emph{clone} a working copy of it to your computer in order to work with it. So go to a folder where you would like to have the code in, right-click and select \emph{Git Clone}. The URL to the repository can be found on its Github page: \url{https://github.com/dedan/homework}. There you can choose from three different types of URLs (you see only two if you are not a collaborator yet.). Choose the HTTP version and paste it into the \emph{Git Clone} window.
+After I made you a collaborator on the homework repository you can \emph{clone} a working copy of it to your computer in order to work with it. So go to a folder where you would like to have the code in, right-click and select \emph{Git Clone}. The URL to the repository can be found on its Github page: \url{https://github.com/dedan/git_intro}. There you can choose from three different types of URLs (you see only two if you are not a collaborator yet.). Choose the HTTP version and paste it into the \emph{Git Clone} window.
 
 If you have any problems with this, or later during your homework, pleas write it into the Wiki on the Github page of the repository and notify me by email.
-
-% TODO zum pushen muss man auf den ordner rechtsklicken
-
-
 % subsection get_a_working_copy_of_the_repository (end)
+
+
+\subsection{Apply changes to the repository} % (fold)
+\label{sg:sub:apply_changes_to_the_repository}
+By now you should have a working copy of the \emph{git\_intro} repository on you computer. It contains also the presentation and other documents related to the presentation. Also a subfolder \emph{homework} in which I ask you to complete the following tasks:
+
+\begin{enumerate}
+    \item add a line (maybe your favorite proverb) to the file \texttt{.homework/all.txt}
+    \item commit these changes to your working repository (always write a few words in the commit message, describing what changes you made).
+    \item add a file called \texttt{yourname.txt} to the homework folder and write some text in it. 
+    \item add the new file to the repository
+    \item also commit these changes
+    \item pull from github repository to get the latest changes of other poeple.
+    \item push the changes to the repository on github
+\end{enumerate}
+
+One remark to the pushing. I learned that TortoiseGit seams to have a bug and always crashes when you call the pushing command (Git Sync from the context menu) from any place but the top-folder of your repository. So before you push, got to the folder \texttt{git\_intro} and call the push command from right-clicking on it. 
+
+% subsection apply_changes_to_the_repository (end)
+
+
+\subsection{Problems} % (fold)
+\label{sg:sub:problems}
+
+    If you have any problems and you think other people might also come up with the same problems, please document the problem \textbf{and} the solution in the wiki on github. If it is a very special problem which is not likely to be encountered by the others, just write me an email.
+
+% subsection problems (end)
+
 
 % section working_on_the_repository (end)
 
