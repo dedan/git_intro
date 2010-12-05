@@ -1,0 +1,151 @@
+%
+%  untitled
+%
+%  Created by Stephan Gabler on 2009-02-22.
+%  Copyright (c) 2009 UOS. All rights reserved.
+%
+\documentclass[]{article}
+
+% Use utf-8 encoding for foreign characters
+\usepackage[utf8]{inputenc}
+
+% Setup for fullpage use
+\usepackage{fullpage}
+
+% Uncomment some of the following if you use the features
+%
+% Running Headers and footers
+%\usepackage{fancyhdr}
+
+% Multipart figures
+%\usepackage{subfigure}
+
+% More symbols
+%\usepackage{amsmath}
+%\usepackage{amssymb}
+%\usepackage{latexsym}
+
+% better links
+\usepackage[pdfborder={0 0 0}]{hyperref}
+
+% Surround parts of graphics with box
+\usepackage{boxedminipage}
+
+% Package for including code in the document
+\usepackage{listings}
+
+% If you want to generate a toc for each chapter (use with book)
+\usepackage{minitoc}
+
+% This is now the recommended way for checking for PDFLaTeX:
+\usepackage{ifpdf}
+
+%\newif\ifpdf
+%\ifx\pdfoutput\undefined
+%\pdffalse % we are not running PDFLaTeX
+%\else
+%\pdfoutput=1 % we are running PDFLaTeX
+%\pdftrue
+%\fi
+
+\ifpdf
+\usepackage[pdftex]{graphicx}
+\else
+\usepackage{graphicx}
+\fi
+\title{GIT Cheatsheet}
+\author{Stephan Gabler}
+
+\date{\today}
+
+\begin{document}
+
+\ifpdf
+\DeclareGraphicsExtensions{.pdf, .jpg, .tif}
+\else
+\DeclareGraphicsExtensions{.eps, .jpg}
+\fi
+
+\maketitle
+
+
+\begin{abstract}
+	\begin{center}
+		Short reminder about \textbf{git} and explanation of the most basic commands
+	\end{center}
+\end{abstract}
+
+\section{Overview - The Concept} % (fold)
+\label{sg:sec:overview}
+The most common use-case of git is to have a central repository that every user connects to and downloads a personal working copy from. When changes are made to the working copy, they can be uploaded to the repository. If these changes conflict with changes other people may have uploaded since the last time you updated your working copy, git tries to merge these files and solve the conflicts. You can also go back in the history of you files and track who made which changes. 
+This is the most common usage, but it is useful whenever you have text-files (code) which change regularly. Then you can have a local repository to track these changes and go back to older versions. A really nice introduction can be found on: \url{http://hoth.entp.com/output/git_for_designers.html} 
+
+% section overview (end)
+
+\section{Guidelines} % (fold)
+\label{sg:sec:guidelines}
+
+\begin{description}
+	\item[only running code] Never push code where you are not really really sure that it does what it is supposed to do to the central repository. Make as many commits as you want to your local repo, but only push it when you are sure it works.	
+	\item[code vs. results] try to separate your code from the results. When someone wants to check out you code, he does not need megabytes of MATLAB figures.
+	\item[comments] comments are one of the most important part of the code. Not only for other people working with your code, also for you if you look at it after some time. So: One short description (maybe only one sentence) at the beginning of each file, explaining shortly what it is good for. Also short comment for every \emph{block} (if, loop, try catch, etc..) in a file.
+	\item[commit messages] always write meaningful commit messages. One sentence summary, one empty line and then a longer explanation of you commit.
+	\item[gitignore] Use the file \emph{.gitignore} so exclude auto-generated or useless files from you commit (for example the MATLAB .asv files).
+    
+\end{description}
+    
+% section guidelines (end)
+
+\section{Commands}
+
+If you want to use GIT on the terminal, these are the basic commands.
+I mention and explain them, because you'll find equivalents of this commands
+in every GIT GUI.
+
+\begin{description}
+	\item[clone] get a working copy of a existing project
+	\item[pull] get changes from the central repository
+	\item[push] send changes to central repository
+	\item[add] add your changes to the next commit
+	\item[commit] commit changes to your working repository
+	\item[status] list of changes on current repository
+	\item[diff] see changes between different versions
+	\item[blame] find out who made which changes
+	\item[log] history of changes
+\end{description}
+
+\section{GUIs} % (fold)
+\label{sg:sec:guis}
+
+Much more convenient is using GIT with a GUI. I had a short look over some programs and recommend the following.
+
+\begin{description}
+	\item[TortoiseGIT (Windows)] 
+	It is a very intuitive and easy to use freeware program that integrates into the Windows Explorer.
+	\begin{description}
+		\item[Website] \url{http://code.google.com/p/tortoisegit/}
+		\item[video] I found a link to video tutorial which seams to be quite good although I think the guy is really annoying: \url{http://www.youtube.com/watch?v=Mdfi5FSUyXQ} 
+	\end{description} 
+	
+	\item[GitX (Mac)] Nice and simple layout for doing commits.
+	\begin{description}
+		\item[Website] \url{http://gitx.frim.nl/}
+	\end{description}
+\end{description}
+
+
+
+% section guis (end)
+
+\section{Help} % (fold)
+\label{sg:sec:help}
+
+Have fun with it, I hope it helps you a lot. 
+
+In case you have some problems and the weblinks and videos do not help
+you solving it, write me a mail: stephan.gabler@gmail.com
+
+
+% section help (end)
+
+\end{document}
