@@ -1,0 +1,116 @@
+%
+%  untitled
+%
+%  Created by Stephan Gabler on 2010-12-02.
+%  Copyright (c) 2010 __MyCompanyName__. All rights reserved.
+%
+\documentclass[]{article}
+
+% Use utf-8 encoding for foreign characters
+\usepackage[utf8]{inputenc}
+
+% Setup for fullpage use
+\usepackage{fullpage}
+
+% Uncomment some of the following if you use the features
+%
+% Running Headers and footers
+%\usepackage{fancyhdr}
+
+% Multipart figures
+%\usepackage{subfigure}
+
+% More symbols
+%\usepackage{amsmath}
+%\usepackage{amssymb}
+%\usepackage{latexsym}
+
+% better links
+\usepackage[pdfborder={0 0 0}]{hyperref}
+
+% Surround parts of graphics with box
+\usepackage{boxedminipage}
+
+% Package for including code in the document
+\usepackage{listings}
+
+% If you want to generate a toc for each chapter (use with book)
+\usepackage{minitoc}
+
+% This is now the recommended way for checking for PDFLaTeX:
+\usepackage{ifpdf}
+
+%\newif\ifpdf
+%\ifx\pdfoutput\undefined
+%\pdffalse % we are not running PDFLaTeX
+%\else
+%\pdfoutput=1 % we are running PDFLaTeX
+%\pdftrue
+%\fi
+
+\ifpdf
+\usepackage[pdftex]{graphicx}
+\else
+\usepackage{graphicx}
+\fi
+\title{Homework for git Introduction}
+\author{Stephan Gabler}
+
+\date{\today}
+
+\begin{document}
+
+\ifpdf
+\DeclareGraphicsExtensions{.pdf, .jpg, .tif}
+\else
+\DeclareGraphicsExtensions{.eps, .jpg}
+\fi
+
+\maketitle
+
+
+\section{Getting the Software and Account}
+
+\subsection{Install MySysGit} % (fold)
+\label{sg:sub:install_mysysgit}
+This gives you the git commandline tools and also a very basic (but not too bad) GUI. On the page \url{http://code.google.com/p/msysgit/} you can get information on the software and find different installers and installation instructions. But it should be enough to just directly download the installer from \href{http://code.google.com/p/msysgit/downloads/detail?name=Git-1.7.3.1-preview20101002.exe}{here} and install it.
+
+% subsection install_mysysgit (end)
+
+
+\subsection{Install the TortoiseGIT GUI (optional but recommended)} % (fold)
+\label{sg:sub:install_the_tortoisegit_gui_optional_}
+Much more convenient GUI and many tools which are similar to what I showed you during the talk. Get the software from \url{http://code.google.com/p/tortoisegit/} and install it on your computer. Maybe you need to restart afterwards. TortoiseGIT will integrate into you File Browser (Explorer) and you access it by the context menu (rightclick) as I showed you in the in the presentation.
+
+\textbf{This software works only when MySysGit already installed!}
+% subsection install_the_tortoisegit_gui_optional_ (end)
+
+
+\subsection{Get a Github account} % (fold)
+\label{sg:sub:get_a_github_account}
+
+Get an account on \url{https://github.com/signup/free}. This is were the repositories are hosted and it also has many other useful tools like a wiki and a ticket system. It is for free and many open-source code is hosted there. When you finished the registration send me a link with you username so I can make you a collaborator of the homework project \href{mailto:stephan.gabler@gmail.com}{\nolinkurl{stephan.gabler@gmail.com}}. You need this to finish the next steps.
+% subsection get_a_github_account (end)
+
+
+\section{Working on the repository} % (fold)
+\label{sg:sec:working_on_the_repository}
+
+\subsection{Get a working copy of the repository} % (fold)
+\label{sg:sub:get_a_working_copy_of_the_repository}
+
+After I made you a collaborator on the homework repository you can \emph{clone} a working copy of it to your computer in order to work with it. So go to a folder where you would like to have the code in, right-click and select \emph{Git Clone}. The URL to the repository can be found on its Github page: \url{https://github.com/dedan/homework}. There you can choose from three different types of URLs (you see only two if you are not a collaborator yet.). Choose the HTTP version and paste it into the \emph{Git Clone} window.
+
+If you have any problems with this, or later during your homework, pleas write it into the Wiki on the Github page of the repository and notify me by email.
+
+% TODO zum pushen muss man auf den ordner rechtsklicken
+
+
+% subsection get_a_working_copy_of_the_repository (end)
+
+% section working_on_the_repository (end)
+
+
+
+
+\end{document}
