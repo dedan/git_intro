@@ -1,0 +1,38 @@
+
+
+git talk
+
+*as I can not show them in the way they will use it, the talk should
+more serve as an orientation and to motivate why to use svn
+
+*First I start explaining the problem of a group of people working on their files, sending emails and have to merge it in the next morning
+
+*other typical problems
+
+*central place, accessible through the web --> diagram
+    diagrams in slides, maybe also blackboard
+    
+====== now the solutions to the problems =======
+
+* where can I get the latest code:
+ --> show github.com
+ 
+* how can we work together on the code.
+ --> show a typical example with the test_code
+ 
+ welche szenarien muss ich ihnen denn beschreiben
+ --> auschecken von existierendem code
+ --> wie ich auf meiner working copy arbeite und änderungen einchecke
+ --> noch mal über änderungen gehen vor dem einchecken
+ --> herausfinden wer änderungen gemacht hat
+ --> in der geschichte zurückgehen (änderungen mit diff)
+ 
+* who wrote this code 
+ --> maybe show this an one of my github projects
+ 
+* show how to revert changes
+
+
+
+--> now to the questions from the beginning again
+
