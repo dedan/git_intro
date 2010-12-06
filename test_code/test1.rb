@@ -2,6 +2,8 @@ require 'rubygems'
 gem 'soundcloud-ruby-api-wrapper'
 require 'soundcloud'
 
+# this is a comment of josi
+
 # oAuth setup code:  
 # Enter your consumer key and consumer secret values here:
 @consumer_application = {:key => 'QrhxUWqgIswl8a9ESYw', 
