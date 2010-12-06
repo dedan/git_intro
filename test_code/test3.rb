@@ -2,6 +2,8 @@ require 'rubygems'
 gem 'soundcloud-ruby-api-wrapper'
 require 'soundcloud'
 
+# a comment from josi
+
 # Create an anonymous soundcloud client
 # if you prefer to work with sandbox-soundcloud.com, replace this with:
 sc_client = Soundcloud.register({:consumer_key => 'I2M7vyfA09dwsghkLCCw', 
