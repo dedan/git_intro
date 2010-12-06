@@ -2,37 +2,34 @@
 
 git talk
 
-*as I can not show them in the way they will use it, the talk should
-more serve as an orientation and to motivate why to use svn
+wie baue ich den talk auf?
 
-*First I start explaining the problem of a group of people working on their files, sending emails and have to merge it in the next morning
+ich spreche die probleme an
+erkläre kurz git anhand der diagramme (und male sie an die tafel)
+zurück zu den problemen und ich zeige die lösungen am computer
 
-*other typical problems
+am anfang, wichtig, erst mal motivation, warum sollten sie das benutzen, was ist der nutzen. am besten anhand einiger use-cases.
+    join a project
+        * woher bekomme ich den neuesten code
+        * ist das der neueste code?
+        ==> there is now only one place to find the code (github)
+        ==> sourcecode browser
+        ==> wiki
+        ==> todo list / ticket system
+        ==> access can be restricted
+    collaborate on a project
+        * was wurde in letzter zeit geändert
+        * wer hat was geändert
+        * gemeinsames arbeiten
+        ==> check out to repos and show how to do this
+        ==> make a change in one, commit, push
+        ==> pull in the other
+        ==> comment changes on github
+    keep the history of your work
+        * zurück zur alten version
+        * auch als eine art backup für z.b. hausarbeiten (binary data)
+        ==> revert the stupid changes of josi
 
-*central place, accessible through the web --> diagram
-    diagrams in slides, maybe also blackboard
-    
-====== now the solutions to the problems =======
+tags und branches erwähnen
 
-* where can I get the latest code:
- --> show github.com
- 
-* how can we work together on the code.
- --> show a typical example with the test_code
- 
- welche szenarien muss ich ihnen denn beschreiben
- --> auschecken von existierendem code
- --> wie ich auf meiner working copy arbeite und änderungen einchecke
- --> noch mal über änderungen gehen vor dem einchecken
- --> herausfinden wer änderungen gemacht hat
- --> in der geschichte zurückgehen (änderungen mit diff)
- 
-* who wrote this code 
- --> maybe show this an one of my github projects
- 
-* show how to revert changes
-
-
-
---> now to the questions from the beginning again
 

@@ -68,16 +68,39 @@ keywordstyle=\color{keywordcolor},
 	\frametitle{Why using Version Control}
 	\framesubtitle{So, what is it ?}
 	
-	\begin{block}{SVN}
+	\begin{block}{Git}
 		A central place for code, and \alert{its history} !
 	\end{block}
 
 	You can work on the same files together, without merging on the next day,
 	you can track you changes, changes of others and can go back to whatever
-	previous version you want.
+	previous version you want. And you have a central place for keeping all your code
 
 	blackboard diagram
 	
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Version Control Workflow}
+    \framesubtitle{Basic}
+    \begin{figure}[h]
+        \centering
+            \includegraphics[width=0.8\textwidth]{scm_simple.png}
+        \caption{A basic Version Control System}
+        \label{sg:fig:scm_simple}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Version Control Workflow}
+    \framesubtitle{Distributed}
+    \begin{figure}[h]
+        \centering
+            \includegraphics[height=0.8\textheight]{dscm.png}
+        \caption{Distributed Version Control System}
+        \label{sg:fig:scm_simple}
+    \end{figure}
 \end{frame}
 
 
@@ -97,11 +120,14 @@ keywordstyle=\color{keywordcolor},
 \begin{frame}
 	\frametitle{Some Guidelines}
 	\framesubtitle{that make it easier for everybody}
-
 	\begin{itemize}
-		\item<1->only running code
-		\item<2-> code vs. results
-		\item<3-> comments
+		\item<1->commit often
+		\item<2->pull often
+		\item<3->only running code
+		\item<4->code vs. results
+		\item<5-> comments
+		\item<6-> commit messages
+		\item<7-> gitignore 
 	\end{itemize}
 \end{frame}
 
@@ -110,16 +136,12 @@ keywordstyle=\color{keywordcolor},
 
 	\begin{itemize}
 		\item<1-> can be used also with binary data (images, poster, data)
-		\item<2-> yifat will soon introduce a website, were you'll also have a wiki for documentation
-		\item<3-> also the repository can be accessed via this website
-		\item<4-> the blame command can show who made which changes
+		\item<2-> also local repositories are really useful
+		\item<3-> the homework will help you to get some experience
+		\item<4-> play with it, it can really help you and the whole lab a lot
+		\item<5-> ask me whenever you have questions
 	\end{itemize}
-	
-	\begin{block}{Final Remark}
-		Just play with it. It's really easy to use and will save you a lot of time
-		and worries.
-	\end{block}
-	
+		
 \end{frame}
 
 
