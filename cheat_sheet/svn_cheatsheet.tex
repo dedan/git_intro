@@ -86,6 +86,8 @@ This is the most common usage, but it is useful whenever you have text-files (co
 \label{sg:sec:guidelines}
 
 \begin{description}
+    \item[commit often] it does not hurt, you can go back to all your old versions and it also documents what you did.
+    \item[pull often] always work on the latest version of code (if several people work on a project)
 	\item[only running code] Never push code where you are not really really sure that it does what it is supposed to do to the central repository. Make as many commits as you want to your local repo, but only push it when you are sure it works.	
 	\item[code vs. results] try to separate your code from the results. When someone wants to check out you code, he does not need megabytes of MATLAB figures.
 	\item[comments] comments are one of the most important part of the code. Not only for other people working with your code, also for you if you look at it after some time. So: One short description (maybe only one sentence) at the beginning of each file, explaining shortly what it is good for. Also short comment for every \emph{block} (if, loop, try catch, etc..) in a file.

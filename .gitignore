@@ -6,3 +6,7 @@
 *.mtc0
 *.out
 *.synctex.gz
+*.nav
+*.snm
+*.toc
+
